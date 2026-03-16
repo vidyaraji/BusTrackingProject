@@ -1,0 +1,99 @@
+/* body{
+    background-image: none;
+} */
+
+
+.DriverDashBoard{
+    margin: 5% auto;
+    width: 70%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.DriverDashBoard img{
+    width: 150px;
+    border:5px solid black;
+    border-radius: 50%;
+}
+
+
+.DriverDashBoard .DriverName{
+    font-size: 30px;
+}
+
+.DriverDashBoard .LocationSharingStatus{
+    color: red;
+    padding: 15px;
+}
+
+.BusDetails{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    padding: 55px;
+}
+
+.BusDetails div{
+    padding: 10px;
+}
+
+
+.DriverDashBoard .buttons{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.DriverDashBoard .buttons button{
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color:wheat;
+    font-style: oblique;
+}
+
+.DriverDashBoard .buttons button:first-child{
+    background-color: green;
+}
+
+
+@media screen and (min-width:675px) and (max-width:770px){
+    .DriverDashBoard{
+        margin: 1% auto;
+        width: 90%;
+        text-align: center;
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .DriverDashBoard .buttons button{
+        padding: 12px;
+        border-radius: 20px;
+        border: none;
+        background-color: red;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:675px) {  
+    .DriverDashBoard{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 17px;
+    }
+    .BusDetails{
+        padding: 20px;
+    }
+    .DriverDashBoard .buttons button{
+        font-size: 15px;
+        padding: 15px;
+        border-radius: 20px;
+        border: none;
+        background-color: red;
+    }
+}

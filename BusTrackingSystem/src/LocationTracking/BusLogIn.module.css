@@ -1,0 +1,296 @@
+.BusLogIn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.BusLogIn .img1 {
+    width: 100%;
+    height: 100%;
+    /* background-image: radial-gradient(white,#f89d36 20%,#7fb48f); */
+    /* object-fit: cover; */
+    position: fixed;
+    z-index: -1;
+}
+
+.LogIn {
+    background-color: rgba(100, 100, 100, 0.5);
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    border: 3px solid black;
+    border-radius: 20px;
+
+}
+
+/* Bus Selection Css*/
+.LogInSuccessful {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.BusSelction {
+    padding: 10px;
+    background-color: aliceblue;
+    width: 40%;
+    text-align: center;
+    margin: 1% auto;
+    border-radius: 5px;
+}
+
+
+.BusList {
+    text-align: center;
+    background-color: white;
+    margin: 2px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.BusList li {
+    padding: 5px;
+}
+
+.BusSelction p:first-child {
+    /* color:#f89d36; */
+    color: green;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.BusSelction p:last-child {
+    font-size: 20px;
+}
+
+.BusList .BusNo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.BusList .BusDestination {
+    /* width: 40%; */
+    /* margin: 2% auto; */
+    /* color:whitesmoke; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-content: center; */
+}
+
+
+.BusList .BusDestination div {
+    background-color: rgba(200, 193, 193, 0.4);
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 15px;
+}
+
+.BusList .BusDestination span {
+    font-size: 40px;
+}
+
+.BusList .BusRoute {
+    font-size: 12px;
+}
+
+.BusList button {
+    background-color: var(--button-color);
+    padding: 5px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    font-size: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.LogIn img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.registerPage img {
+    width: 300px;
+    height: 500px;
+}
+
+.LogIn .form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 8% auto;
+    flex-grow: 1;
+}
+
+.registerPage .form {
+    /* padding: 30px; */
+    margin: 0;
+}
+
+.LogIn .form h3 {
+    font-family: Story Script;
+    margin: 5%;
+    color: #c99fb3;
+    color: #97e295;
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+.registerPage .form h3 {
+    letter-spacing: 0px;
+}
+
+.LogIn .form form,
+.registerPage .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LogIn form input {
+    width: 60%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5%;
+}
+
+
+.registerPage form input {
+    margin: 4%;
+}
+
+.LogIn form input[type="submit"] {
+    margin-bottom: 0;
+    background-color: #f89d36;
+    width: 40%;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.registerPage form input[type="submit"] {
+    margin-top: 0;
+}
+
+.registerPage {
+    display: none;
+}
+
+.LogIn .register {
+    font-family: IceLand;
+    color: red;
+    display: flex;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.LogIn .register p {
+    color: black;
+}
+
+.LogIn .register a {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:300px) and (max-width:675px) {
+
+    .LogIn {
+        justify-content: center;
+        pointer-events: auto;
+    }
+
+    .BusLogIn .img1 {
+        flex-grow: 1;
+        position: static;
+        border-radius: 0px;
+    }
+
+    .LogIn img {
+        object-fit: contain;
+
+    }
+
+    .LogIn {
+        background-color: rgba(100, 100, 100, 0.5);
+        width: 100%;
+        margin: 0;
+        border: none;
+        border-radius: 0px;
+    }
+
+
+
+
+    .LogInSuccessful {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.4);
+        font-family: "Roboto Flex", sans-serif;
+    }
+
+    .BusSelction {
+        padding: 5px;
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+        margin: 5% auto;
+        border-radius: 5px;
+    }
+
+
+
+    .BusList {
+        /* text-align: center; */
+        background-color: white;
+        margin: 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

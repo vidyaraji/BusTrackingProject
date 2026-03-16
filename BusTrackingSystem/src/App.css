@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+}
+.Main{
+  position: relative;
+  /* background: url('../public/waves.svg') no-repeat bottom center; */
+  background-size:cover;
+  width: 100%;
+  min-height: 100%;
+
+}
+
+
+/* .Main .waves{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+} */
+
+
+
+
+
+.MainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+.MainContainer img{
+  width: 20%;
+  flex-basis: 40%;
+  
+}
+
+.MainContainer1{
+  text-align: right;
+  margin: 10% auto;
+}
+.MainContainer1 .MainContainerBus{
+  display: flex;
+  position: relative;
+}
+.MainContainer1 .MainContainerBus img{
+  width: 60%;
+  position: absolute;
+  left:-20%;
+}
+.MainContainer1 .MainContainerBus h1{
+  flex-basis: 80%;
+  font-family: "Macondo Swash Caps",'cursive';
+  font-size: 35px;
+  font-weight: 600;
+  color: brown;
+  margin: 5px;
+  flex-grow: 1;
+}
+.MainContainer1 h4{
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+.MainContainer1 button{
+  border: none;
+  padding: 15px;
+  width:40%;
+  margin: 2%;
+  margin-top: 20%;
+  border-radius: 20px;
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight:bold;
+  background-color: #f89d36;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.MainContainer1 img{
+  width: 7%;
+}
+.MainNavBar span{
+  font-size: 15px;
+}
+
+
+@media screen and (max-width:1300px) {
+  .MainContainer img:last-child{
+    flex-grow: 1;
+    width: 60%;
+  }
+}
+@media screen and (min-width:675px) and (max-width:770px){
+  .MainContainer img:last-child{
+    flex-grow: 1;
+    width: 10%;
+    padding: 0;
+    margin: 0;
+  }
+  .MainContainer1 button{
+    width: 40%;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .MainContainer1 button img{
+    width: 8%;
+    padding: 0;
+  }
+  .MainContainer1 .MainContainerBus h1{
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:675px) {  
+  .MainContainer img:last-child{
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px; 
+  }
+  .MainContainer1 .MainContainerBus h1{
+  font-size: 25px;
+}
+  .MainContainer1 button{
+    font-size: 13px;
+    width: 50%;
+    padding:10px;
+  }
+  .MainContainer1 button img{
+    width: 8%;
+  }
+
+  .MainNavBar li a img{
+    width: 20%;
+  }
+  .MainNavBar span{
+    font-size: 13px;
+  }
+}
+
+/* @media screen and (max-width:450px) {
+  .MainContainer img:last-child{
+    width: 70%;
+  }
+  .MainContainer1 .MainContainerBus h1{
+    font-size: 24px;
+  }
+  .MainNavBar li a img{
+    width: 25%;
+  }
+  .MainNavBar span{
+    font-size: 13px;
+  }
+  .MainContainer1 button{
+    width: 60%;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .MainContainer1 button img{
+    width: 10%;
+  } */
+
+

@@ -1,0 +1,100 @@
+.MainNavBar{
+  display: flex;
+}
+
+.MainNavBar .CollegeName{
+  color: #e27800;
+  font-family: 'Tinos','Courier New', Courier, monospace;
+  font-weight:  600;
+  font-style: italic;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+.MainNavBar ul{
+  width: 100%;
+  display: flex;
+  margin: 0;
+  text-align: right;
+  list-style: none;
+  padding: 10px 25px;
+  gap: 100px;
+  justify-content: flex-end;
+}
+
+.MainNavBar ul li{
+    cursor: pointer;
+}
+.MainNavBar ul li :active{
+  background-color: #e27800;
+}
+.MainNavBar ul li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: brown;
+}
+.MainNavBar ul li a span{
+  padding: 5px;
+}
+.MainNavBar ul li img{
+  width: 30px;
+}
+
+
+.MainNavBar ul li a {
+  padding: 5px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.MainNavBar ul li.active a {
+  background-color: #98bca3;
+  color: white;
+}
+
+.MainNavBar ul li.active img {
+  filter: brightness(0) invert(1);
+}
+
+
+@media screen and (max-width:1300px) {
+  .MainNavBar div:first-child{
+    font-size: 15px;
+  }
+  .MainNavBar span{
+    font-size: 12px;
+  }
+  .MainNavBar ul{
+    flex-grow: 1;
+    gap:25px; 
+    width: 30%;
+  }
+}
+@media screen and (min-width:675px) and (max-width:770px){
+  .MainNavBar div:first-child{
+    font-size: 12px;
+  }
+  .MainNavBar ul{
+    flex-grow: 1;
+    gap:25px;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:675px) {  
+  .MainNavBar div:first-child{
+    font-size: 12px;
+  }
+    .MainNavBar ul{
+      padding: 5px;
+      margin: 0;
+      flex-grow: 1;
+      gap:0px;
+      width: 100px;
+  }
+  .MainNavBar ul li a{
+    padding: 3px 12px;
+  }
+}

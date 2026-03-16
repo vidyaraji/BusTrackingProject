@@ -1,0 +1,111 @@
+.contact{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(11, 15, 27);
+    color:whitesmoke;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 27px;
+    font-family: sans-serif;
+    margin-top:2%;
+}
+
+.contact .Collegename{
+    color:#f89d36;
+    font-size: 18px;
+}
+
+.contact .Collegename span{
+    font-weight: lighter;
+    font-size: 13px;
+    color:aliceblue;
+    font-style: oblique;
+}
+
+.contact .Contactaddress{
+    columns: 2;
+    padding: 20px;
+    margin: 2%;
+}
+
+
+.image{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 5%; */
+}
+.image div{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(24, 28, 40,0.8);
+    border: 2px solid black;
+    padding: 1px;
+    font-style: italic;
+}
+.image div span{
+    font-size: 15px;
+    padding: 5px;
+    color: wheat;
+    /* margin-top: 3%; */
+    font-weight: lighter;
+    /* color: black; */
+}
+.image div img{
+    width: 10%;
+    margin: 1%;
+}
+
+@media screen and (min-width:675px) and (max-width:770px){
+    .contact .Collegename{
+        font-size: 15px;
+    }
+    .contact .Collegename span{
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .contact .Contactaddress{
+        font-size: 14px;
+        padding: 10px;
+        margin: 2%;
+    }
+    .image div{
+        width: 15%;
+        border: 2px solid black;
+        padding: 1px;
+    }
+    .image div span{
+        font-size:10px;
+    }
+    .image div img{
+        width: 15%;
+        margin: 5px;
+    }
+}
+    
+@media screen and (min-width:300px) and (max-width:675px){
+    .contact .Collegename{
+        font-size: 13px;
+    }
+    .contact .Collegename span{
+        font-size: 10px;
+        font-weight: 100;
+    }
+    .contact .Contactaddress{
+        font-size: 10px;
+        padding: 8px;
+        margin: 2%;
+    }
+    .image div{
+        width: 22%;
+        border: 2px solid black;
+        padding: 1px;
+    }
+    .image div span{
+        font-size:9px;
+    }
+    .image div img{
+        width: 13%;
+        margin: 5px;
+    }
+}

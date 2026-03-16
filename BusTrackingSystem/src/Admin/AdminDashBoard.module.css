@@ -1,0 +1,362 @@
+.AdminDashBoard {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.AdminNav img {
+    width: 80px;
+    border: 2px solid black;
+}
+
+.AdminNav {
+    width: 20%;
+    height: 100%;
+    background-color: azure;
+}
+
+.welcome {
+    text-align: center;
+    margin: 5%;
+    padding: 20px;
+}
+
+.AdminNav p {
+    margin: 2%;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.AdminNav p span {
+    font-size: 24px;
+    color: var(--button-color);
+    font-weight: 600;
+}
+
+.NavList {
+    width: 100%;
+    height: 100%;
+}
+
+.NavList ul {
+    height: 80%;
+    list-style: none;
+    display: flex;
+    margin-top: 20%;
+    flex-direction: column;
+
+}
+
+.NavList ul div:first-child {
+    border-top: 0.5px solid black;
+}
+
+.NavList ul li {
+    border-bottom: 0.5px solid black;
+    padding: 20px;
+}
+
+.activeTab {
+    background-color: var(--button-color);
+}
+
+.Content {
+    display: none;
+}
+
+/*Css for Register a New Driver*/
+.mainContent {
+    margin: 3% auto;
+    flex-basis: 40%;
+}
+
+.mainContent .DriverRegister {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+
+}
+
+.mainContent form {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+.mainContent form input {
+    padding: 10px;
+    margin: 2%;
+}
+
+.mainContent form input[type="number"],
+.mainContent form input[type="name"],
+.mainContent form input[type="password"],
+.mainContent form input[type="text"] {
+    border: none;
+    border-bottom: 2px solid green;
+}
+
+.mainContent .DriverRegister h3,
+.updateDriver h3,
+.removeDriver h3,
+.driverList h3 {
+    color: tomato;
+    font-size: 30px;
+    margin: 6%;
+}
+
+.mainContent .DriverRegister input[type="submit"] {
+    cursor: pointer;
+    margin: 1% auto;
+    width: 30%;
+    border: none;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    padding: 10px;
+    font-style: italic;
+}
+
+
+
+/* Css for Updating of new Driver */
+
+.updateDriver,
+.removeDriver,
+.driverList {
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+
+}
+
+
+.updateDriver .forSearch,
+.removeDriver .forSearch {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.updateDriver .forSearch input,
+.removeDriver .forSearch input {
+    padding: 5px;
+}
+
+.updateDriver .forSearch button,
+.removeDriver .forSearch button {
+    padding: 5px;
+    width: 25%;
+    border: none;
+    background-color: rgb(62, 185, 62);
+    color: white;
+}
+
+.updateDriver form {
+    padding: 20px;
+    text-align: left;
+    margin: 2% auto;
+    width: 70%;
+}
+
+.updateDriver form button,
+.removeDriver #delete,
+.driverList button {
+    background-color: var(--button-color);
+    border: none;
+    color: black;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+
+
+/* Updation of Driver*/
+.removeDriver h3,
+.driverList h3{
+    margin: 0px;
+}
+.removeDriver table,
+.driverList table {
+    margin: 10% 0;
+}
+
+.removeDriver table,
+.removeDriver th,
+.removeDriver td,
+.driverList table,
+.driverList th,
+.driverList td {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+.removeDriver tr td,
+.driverList tr td {
+    padding: 10px;
+}
+
+
+@media screen and (min-width:300px) and (max-width:675px) {
+    .AdminNav img {
+        width: 30px;
+    }
+
+    .AdminNav {
+        width: 30%;
+    }
+
+    .welcome {
+        text-align: center;
+        margin: 1%;
+        padding: 10px;
+    }
+
+    .AdminNav p {
+        margin: 1%;
+        letter-spacing: 0px;
+
+    }
+
+    .AdminNav p span {
+        font-size: 20px;
+        color: var(--button-color);
+        font-weight: 600;
+    }
+
+    .NavList ul {
+        list-style: none;
+        display: flex;
+        margin-top: 40%;
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+    /*Css for Register a New Driver*/
+    .mainContent {
+        margin: 0;
+        flex-basis: 40%;
+    }
+
+    .mainContent .DriverRegister {
+        padding: 50px 0px 10px 0px;
+        box-shadow: 0;
+        border-radius: 0;
+        height: 100%;
+
+    }
+
+    .mainContent .DriverRegister h3,
+    .updateDriver h3,
+    .removeDriver h3,
+    .driverList h3 {
+        font-size: 25px;
+        margin: 10%;
+    }
+
+    .mainContent .DriverRegister input[type="submit"] {
+        margin: 5% auto;
+        width: 50%;
+        padding: 15px;
+    }
+
+
+    /* Css for Updating of new Driver */
+    .updateDriver,
+    .removeDriver,
+    .driverList {
+        flex-grow: 1;
+        flex-basis: 70%;
+        margin:0px;
+         padding: 50px 0px 10px 0px;
+        box-shadow: 0;
+        border-radius: 0;
+        height: 100%;
+
+    }
+
+
+    .updateDriver .forSearch,
+    .removeDriver .forSearch {
+        flex-wrap: wrap;
+    }
+
+    .updateDriver .forSearch input,
+    .removeDriver .forSearch input {
+        padding: 8px;
+    }
+
+    .updateDriver .forSearch button,
+    .removeDriver .forSearch button {
+        padding: 10px;
+        width: 50%;
+    }
+
+    .updateDriver form {
+        padding: 40px;
+    }
+
+    .updateDriver form button,
+    .removeDriver #delete,
+    .driverList button {
+        border: none;
+        color: black;
+        padding: 15px;
+        margin: 20px 0px;
+    }
+    .updateDriver form label{
+        font-size: 15px;
+    }
+
+    .tableContainer {
+  width: 100%;
+  overflow-x: auto;
+}
+
+    /*Remove Driver */
+     .removeDriver,.driverList {
+        padding: 70px 0px 10px 0;
+        width: 73%;
+        text-align: center;
+     }
+    .removeDriver form,
+        .driverList form{
+        padding: 0px;
+    }
+    .removeDriver h3,
+    .driverList h3{
+        margin: 0;
+    }
+   .removeDriver table,
+.driverList table {
+    margin: 0;
+}
+
+.removeDriver button,.driverList button{
+    width: 40%;
+    margin: 2% auto;
+}
+/* .removeDriver table,
+.removeDriver th,
+.removeDriver td,
+.driverList table,
+.driverList th,
+.driverList td {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+.removeDriver tr td,
+.driverList tr td {
+    padding: 5px;
+} */
+
+}

@@ -1,0 +1,26 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    
+    /* background: url('../public/waves.svg') no-repeat bottom center; */
+    /* background-size:cover; */
+    /* overflow-x: hidden; */
+
+
+/* @media (max-width: 600px) {
+  body {
+    background-size: 100% auto; /* KEY FIX */
+  
+
+/* 
+body.Modal{
+    overflow: hidden;
+} */
+
+
+:root{
+    --button-color:#f89d36;
+}
+body{
+    background-color: #dce6e9;
+}
